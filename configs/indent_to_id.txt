@@ -1,0 +1,6 @@
+intentg:0
+intentc:1
+intentf:2
+intentb:3
+intenth:4
+intenta:5
