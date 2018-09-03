@@ -180,11 +180,11 @@ def train():
                     loss_slot = []
                     loss_intent = []
 
-            # best = evaluate(sess, model, "dev", dev_manager, id_to_tag, logger)
-            # if best:
-            if i%7 == 0:
+            best = evaluate(sess, model, "dev", dev_manager, id_to_tag, logger)
+            if best:
+            # if i%7 == 0:
                 save_model(sess, model, args.ckpt_path, logger)
-        # evaluate(sess, model, "test", test_manager, id_to_tag, logger)
+        evaluate(sess, model, "test", test_manager, id_to_tag, logger)
 
 def evaluate_test():
     config = load_config(args.config_file)

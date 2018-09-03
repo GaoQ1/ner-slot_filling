@@ -161,8 +161,13 @@ def create_model(session, Model_class, path, load_vec, config, id_to_char, logge
             logger.info("Load pre-trained embedding.")
     return model
 
-def result_to_json(string, tags, intent):
-    item = {"string": string, "entities": [], "intent": intent}
+
+def result_to_json(string, tags, intentName, probability):
+    item = {
+        "string": string,
+        "entities": [],
+        "intent": {}
+    }
     entity_name = ""
     entity_start = 0
     idx = 0
@@ -182,6 +187,10 @@ def result_to_json(string, tags, intent):
             entity_name = ""
             entity_start = idx
         idx += 1
+    item["intent"] = {
+        "intentName": intentName,
+        "probability": probability
+    }    
     return item
 
 

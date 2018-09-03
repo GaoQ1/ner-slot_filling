@@ -84,7 +84,8 @@ class Model(object):
             # logits for tags
             self.logits_slot, self.logits_intent = self.project_layer_bilstm(model_outputs)
 
-            self.intent = tf.argmax(self.logits_intent, axis=1)
+            self.intent_idx = tf.argmax(self.logits_intent, axis=1)
+            self.intent_rank = tf.nn.softmax(self.logits_intent, axis=1)
         
         elif self.model_type == 'idcnn':
             # 膨胀卷积网络
@@ -97,7 +98,8 @@ class Model(object):
             # logits for tags, intents
             self.logits_slot, self.logits_intent = self.project_layer_idcnn(model_outputs)
 
-            self.intent = tf.argmax(self.logits_intent, axis=1)
+            self.intent_idx = tf.argmax(self.logits_intent, axis=1)
+            self.intent_rank = tf.argmax(self.logits_intent, axis=1)
         else:
             raise KeyError
 
@@ -430,9 +432,9 @@ class Model(object):
 
             return global_step, loss_slot, loss_intent
         else:
-            lengths, logits_slot, intent = sess.run(
-                [self.lengths, self.logits_slot, self.intent], feed_dict)
-            return lengths, logits_slot, intent
+            lengths, logits_slot, intent_idx, intent_rank = sess.run(
+                [self.lengths, self.logits_slot, self.intent_idx, self.intent_rank], feed_dict)
+            return lengths, logits_slot, intent_idx, intent_rank
 
     def decode(self, logits, lengths, matrix):
         """
@@ -471,7 +473,8 @@ class Model(object):
             tags = batch[-2] # 真实的slot标签
             intents = np.asarray(batch[-1])[:, 1] # 真实的intents标签
 
-            lengths, scores_slot, intent_idx = self.run_step(sess, False, batch)
+            lengths, scores_slot, intent_idx, intent_rank = self.run_step(sess, False, batch)
+
             batch_paths = self.decode(scores_slot, lengths, trans) # viterbi算法求出最佳路径
 
             for i in range(len(strings)):
@@ -492,9 +495,12 @@ class Model(object):
         return slot_results, itent_results
 
     def evaluate_line(self, sess, inputs, id_to_tag, id_to_intent):
-        lengths, scores_slot, intent_idx = self.run_step(sess, False, inputs)
+        lengths, scores_slot, intent_idx, intent_rank = self.run_step(sess, False, inputs)
         trans = self.trans.eval(session=sess)
         batch_paths = self.decode(scores_slot, lengths, trans)
         tags = [id_to_tag[idx] for idx in batch_paths[0]]
-        intent = id_to_intent[intent_idx[0]]
-        return result_to_json(inputs[0][0], tags, intent)
+
+        intentName = id_to_intent[intent_idx[0]]
+        probability = intent_rank[0][intent_idx[0]]
+
+        return result_to_json(inputs[0][0], tags, intentName, probability)

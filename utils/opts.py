@@ -15,7 +15,7 @@ def str2bol(v):
 def train_opts():
     parser = argparse.ArgumentParser(
         description='Learning with Bi-LSTM + CRF or IDCNN + CRF together with Language Model')
-    parser.add_argument('--clean', type=str2bol, default=True,
+    parser.add_argument('--clean', type=str2bol, default=False,
                         help='clean train folder')
     parser.add_argument('--train', type=str2bol, default=True,
                         help='Whether train the model')
@@ -93,11 +93,11 @@ def train_opts():
                         help='File for test data')
 
     # model type, idcnn or bilstm
-    parser.add_argument('--model_type', type=str,
-                        default='idcnn',
-                        help='Model type, can be idcnn or bilstm')
     # parser.add_argument('--model_type', type=str,
-    #                     default='bilstm',
+    #                     default='idcnn',
     #                     help='Model type, can be idcnn or bilstm')
+    parser.add_argument('--model_type', type=str,
+                        default='bilstm',
+                        help='Model type, can be idcnn or bilstm')
     
     return parser.parse_args()
