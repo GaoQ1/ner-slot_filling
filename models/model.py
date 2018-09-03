@@ -44,7 +44,6 @@ class Model(object):
                                       shape=[None, None],
                                       name="Targets")
 
-        # TODO 加上意图
         self.intents = tf.placeholder(dtype=tf.int32,
                                     shape=[None, None],
                                     name="Intents")
@@ -56,9 +55,9 @@ class Model(object):
         used = tf.sign(tf.abs(self.char_inputs))
         length = tf.reduce_sum(used, reduction_indices=1)
         self.lengths = tf.cast(length, tf.int32)
-        self.batch_size = tf.shape(self.char_inputs)[0]
-        self.num_steps = tf.shape(self.char_inputs)[-1]
-        
+        self.batch_size = tf.shape(self.char_inputs)[0] # 批处理的个数
+        self.num_steps = tf.shape(self.char_inputs)[-1] # 每句话的长度
+
         #Add model type by crownpku bilstm or idcnn
         self.model_type = config['model_type']
 
@@ -194,13 +193,13 @@ class Model(object):
         """
     
         # tf.expand_dims会向tensor中插入一个维度，插入位置就是参数代表的位置（维度从0开始）。
-        # shape(?, ?, 120) ——> shape(?, 1, ?, 120)
+        # shape(?, ?, 120) ——> shape(?, 1, ?, 120)  [batch_size, height_dim, width_dim, in_channels]
         model_inputs = tf.expand_dims(model_inputs, 1)
         reuse = False
         if self.dropout == 1.0:
             reuse = True
         with tf.variable_scope("idcnn" if not name else name):
-            #shape=[1*3*120*100]
+            #shape=[1*3*120*100] [height_dim, width_dim, in_channels, out_channels]
             shape=[1, self.filter_width, self.embedding_dim,
                        self.num_filter]
             filter_weights = tf.get_variable(
@@ -219,7 +218,7 @@ class Model(object):
                                       name="init_layer",use_cudnn_on_gpu=True)
             finalOutFromLayers = []
             totalWidthForLastDim = 0
-            for j in range(self.repeat_times):
+            for j in range(self.repeat_times): # 每一层训练4遍
                 for i in range(len(self.layers)): # 1,1,2
                     dilation = self.layers[i]['dilation']
                     isLast = True if i == (len(self.layers) - 1) else False
@@ -257,7 +256,6 @@ class Model(object):
             finalOut = tf.reshape(finalOut, [-1, totalWidthForLastDim])
             self.cnn_output_width = totalWidthForLastDim
 
-            
             return finalOut
 
     def project_layer_bilstm(self, lstm_outputs, name=None):
@@ -322,8 +320,8 @@ class Model(object):
             with tf.variable_scope("logits_intent"):
                 idcnn_outputs = tf.reshape(
                     idcnn_outputs, [-1, self.num_steps, self.cnn_output_width])
-                idcnn_outputs_sorted = sort(idcnn_outputs, axis = 1)
-                idcnn_outputs = idcnn_outputs_sorted[:, -1, :]
+                idcnn_outputs_sorted = sort(idcnn_outputs, axis = 1) # 相当于做最大池化得到一句话中最大的那个特征，再做交叉熵损失
+                idcnn_outputs = idcnn_outputs_sorted[:, -1, :] # [batch_size, cnn_output_width]
 
                 W = tf.get_variable("W", shape=[self.cnn_output_width, self.num_intents],
                                     dtype=tf.float32, initializer=self.initializer)
@@ -332,7 +330,7 @@ class Model(object):
                     0.001, shape=[self.num_intents]))
 
                 # 等同于matmul(x, weights) + biases.
-                pred_intent = tf.nn.xw_plus_b(idcnn_outputs, W, b)
+                pred_intent = tf.nn.xw_plus_b(idcnn_outputs, W, b) # [batch_size, num_intents]
 
             return pred_slot, pred_intent
 
@@ -376,8 +374,8 @@ class Model(object):
                 sequence_lengths=lengths+1)
             return tf.reduce_mean(-log_likelihood)
 
-    def loss_layer_intent(self, project_logits, name=None): # TODO
-        with tf.variable_scope("intent_loss" if not name else name):
+    def loss_layer_intent(self, project_logits, name=None):
+        with tf.variable_scope("intent_loss" if not name else name): # [batch_size, num_intents]
             # 定义intent分类的损失 数据是RNN最后一层的输出为label，真实的数据为logit
             cross_entropy = tf.nn.softmax_cross_entropy_with_logits(
                 labels=tf.one_hot(self.intents[:, 0],
@@ -401,6 +399,7 @@ class Model(object):
             self.seg_inputs: np.asarray(segs), # 输入的字段的分割符号
             self.dropout: 1.0, # 评估无需 dropout
         }
+
         if is_train:
             feed_dict[self.targets] = np.asarray(tags) # 训练数据时输入的字符标签
             feed_dict[self.intents] = np.asarray(intents)  # 训练数据时输入的意图标签
@@ -497,7 +496,5 @@ class Model(object):
         trans = self.trans.eval(session=sess)
         batch_paths = self.decode(scores_slot, lengths, trans)
         tags = [id_to_tag[idx] for idx in batch_paths[0]]
-
-        intent = id_to_intent[intent_idx[0]]  # 算出意图是什么 TODO
-
+        intent = id_to_intent[intent_idx[0]]
         return result_to_json(inputs[0][0], tags, intent)
