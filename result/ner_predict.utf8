@@ -167,10 +167,10 @@
 膝 O O
 关 O O
 节 O O
-压 O O
-痛 O O
-减 O O
-轻 O O
+压 O B-SYM
+痛 O I-SYM
+减 O I-SYM
+轻 O I-SYM
 ， O O
 活 O O
 动 O O
@@ -321,8 +321,8 @@
 级 O O
 ， O O
 上 O O
-下 O O
-肢 O O
+下 O I-REG
+肢 O I-REG
 肢 O O
 肌 O O
 力 O O
@@ -655,7 +655,7 @@ m O O
 侧 O O
 阴 O O
 囊 O O
-未 B-AT B-AT
+未 B-AT O
 发 O O
 红 O O
 ， O O

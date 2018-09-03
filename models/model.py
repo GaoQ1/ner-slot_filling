@@ -99,7 +99,7 @@ class Model(object):
             self.logits_slot, self.logits_intent = self.project_layer_idcnn(model_outputs)
 
             self.intent_idx = tf.argmax(self.logits_intent, axis=1)
-            self.intent_rank = tf.argmax(self.logits_intent, axis=1)
+            self.intent_rank = tf.nn.softmax(self.logits_intent, axis=1)
         else:
             raise KeyError
 

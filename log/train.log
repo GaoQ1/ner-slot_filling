@@ -1,520 +1,512 @@
-2018-09-03 16:28:56,547 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model_type     :	bilstm
-2018-09-03 16:28:56,547 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_chars      :	704
-2018-09-03 16:28:56,548 - D:\learn\ner\NER_medical_records\log\train.log - INFO - char_dim       :	100
-2018-09-03 16:28:56,548 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_tags       :	28
-2018-09-03 16:28:56,548 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_intents    :	6
-2018-09-03 16:28:56,549 - D:\learn\ner\NER_medical_records\log\train.log - INFO - seg_dim        :	20
-2018-09-03 16:28:56,554 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lstm_dim       :	100
-2018-09-03 16:28:56,558 - D:\learn\ner\NER_medical_records\log\train.log - INFO - batch_size     :	20
-2018-09-03 16:28:56,563 - D:\learn\ner\NER_medical_records\log\train.log - INFO - emb_file       :	D:\learn\ner\NER_medical_records\assets\cooked_corpus\vec.txt
-2018-09-03 16:28:56,568 - D:\learn\ner\NER_medical_records\log\train.log - INFO - clip           :	5
-2018-09-03 16:28:56,572 - D:\learn\ner\NER_medical_records\log\train.log - INFO - dropout_keep   :	0.5
-2018-09-03 16:28:56,577 - D:\learn\ner\NER_medical_records\log\train.log - INFO - optimizer      :	adam
-2018-09-03 16:28:56,581 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lr             :	0.001
-2018-09-03 16:28:56,584 - D:\learn\ner\NER_medical_records\log\train.log - INFO - tag_schema     :	iobes
-2018-09-03 16:28:56,591 - D:\learn\ner\NER_medical_records\log\train.log - INFO - pre_emb        :	True
-2018-09-03 16:28:56,595 - D:\learn\ner\NER_medical_records\log\train.log - INFO - zeros          :	True
-2018-09-03 16:28:56,599 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lower          :	False
-2018-09-03 16:28:59,196 - D:\learn\ner\NER_medical_records\log\train.log - INFO - Created model with fresh parameters.
-2018-09-03 16:28:59,436 - D:\learn\ner\NER_medical_records\log\train.log - INFO - Load pre-trained embedding.
-2018-09-03 16:28:59,437 - D:\learn\ner\NER_medical_records\log\train.log - INFO - start training
-2018-09-03 16:29:01,605 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:01,934 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  90.81%; precision:   0.00%; recall:   0.00%; FB1:   0.00
-
-2018-09-03 16:29:01,935 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:03,306 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:03,537 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  90.84%; precision:   0.00%; recall:   0.00%; FB1:   0.00
-
-2018-09-03 16:29:03,537 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:05,187 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:05,433 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  92.09%; precision:  17.39%; recall:   3.31%; FB1:   5.56
-
-2018-09-03 16:29:05,434 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:05,496 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:5.560
-2018-09-03 16:29:05,862 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:06,724 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:4 step:13/29, INTENT loss: 1.723207, NER loss:17.531830
-2018-09-03 16:29:07,314 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:07,532 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  93.32%; precision:  29.63%; recall:  13.22%; FB1:  18.29
-
-2018-09-03 16:29:07,533 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:07,586 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:18.290
-2018-09-03 16:29:07,906 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:09,239 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:09,454 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  94.61%; precision:  34.48%; recall:  24.79%; FB1:  28.85
-
-2018-09-03 16:29:09,455 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:09,510 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:28.850
-2018-09-03 16:29:09,808 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:11,307 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:11,560 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  95.42%; precision:  37.89%; recall:  29.75%; FB1:  33.33
-
-2018-09-03 16:29:11,560 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:11,621 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:33.330
-2018-09-03 16:29:11,919 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:12,979 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:7 step:26/29, INTENT loss: 1.670920, NER loss: 5.478796
-2018-09-03 16:29:13,284 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:13,594 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  96.98%; precision:  71.30%; recall:  67.77%; FB1:  69.49
-
-2018-09-03 16:29:13,595 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:13,648 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:69.490
-2018-09-03 16:29:13,965 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:15,297 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:15,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  97.90%; precision:  74.44%; recall:  81.82%; FB1:  77.95
-
-2018-09-03 16:29:15,513 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:15,566 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:77.950
-2018-09-03 16:29:15,886 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:17,229 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:17,445 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  98.23%; precision:  78.91%; recall:  83.47%; FB1:  81.12
-
-2018-09-03 16:29:17,446 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:17,498 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:81.120
-2018-09-03 16:29:17,799 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:19,150 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:19,367 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  98.59%; precision:  81.06%; recall:  88.43%; FB1:  84.58
-
-2018-09-03 16:29:19,368 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:19,423 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:84.580
-2018-09-03 16:29:19,731 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:20,342 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:11 step:10/29, INTENT loss: 1.658443, NER loss: 3.230159
-2018-09-03 16:29:21,078 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:21,295 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  98.50%; precision:  81.68%; recall:  88.43%; FB1:  84.92
-
-2018-09-03 16:29:21,296 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:21,353 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:84.920
-2018-09-03 16:29:21,607 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:22,956 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:23,173 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  98.83%; precision:  87.80%; recall:  89.26%; FB1:  88.52
-
-2018-09-03 16:29:23,174 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:23,229 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:88.520
-2018-09-03 16:29:23,546 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:24,988 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:25,211 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.07%; precision:  90.91%; recall:  90.91%; FB1:  90.91
-
-2018-09-03 16:29:25,212 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:25,270 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:90.910
-2018-09-03 16:29:25,609 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:26,791 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:14 step:23/29, INTENT loss: 1.645557, NER loss: 1.917270
-2018-09-03 16:29:27,026 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:27,253 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.01%; precision:  88.71%; recall:  90.91%; FB1:  89.80
-
-2018-09-03 16:29:27,254 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:28,635 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:28,871 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.16%; precision:  89.52%; recall:  91.74%; FB1:  90.61
-
-2018-09-03 16:29:28,872 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:30,319 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:30,541 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.22%; precision:  88.10%; recall:  91.74%; FB1:  89.88
-
-2018-09-03 16:29:30,542 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:31,894 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:32,211 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.13%; precision:  86.05%; recall:  91.74%; FB1:  88.80
-
-2018-09-03 16:29:32,212 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:32,726 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:18 step:7/29, INTENT loss: 1.612406, NER loss: 1.375107
-2018-09-03 16:29:34,146 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:34,472 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.43%; precision:  94.17%; recall:  93.39%; FB1:  93.78
-
-2018-09-03 16:29:34,473 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:34,539 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:93.780
-2018-09-03 16:29:34,835 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:36,535 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:36,781 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.31%; precision:  90.32%; recall:  92.56%; FB1:  91.43
-
-2018-09-03 16:29:36,782 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:38,236 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:38,487 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.43%; precision:  90.62%; recall:  95.87%; FB1:  93.17
-
-2018-09-03 16:29:38,488 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:39,382 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:21 step:20/29, INTENT loss: 1.604853, NER loss: 0.970203
-2018-09-03 16:29:39,985 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:40,268 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.55%; precision:  93.50%; recall:  95.04%; FB1:  94.26
-
-2018-09-03 16:29:40,269 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:40,334 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:94.260
-2018-09-03 16:29:40,690 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:42,300 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:42,567 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  97.52%; recall:  97.52%; FB1:  97.52
-
-2018-09-03 16:29:42,568 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:42,630 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:97.520
-2018-09-03 16:29:42,909 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:44,349 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:44,585 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.73%; precision:  98.33%; recall:  97.52%; FB1:  97.93
-
-2018-09-03 16:29:44,586 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:44,646 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:97.930
-2018-09-03 16:29:44,901 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:29:46,502 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:46,731 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.61%; precision:  95.12%; recall:  96.69%; FB1:  95.90
-
-2018-09-03 16:29:46,731 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:46,873 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:25 step:4/29, INTENT loss: 1.582634, NER loss: 0.769337
-2018-09-03 16:29:48,385 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:48,614 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  97.52%; recall:  97.52%; FB1:  97.52
-
-2018-09-03 16:29:48,615 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:50,291 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:50,524 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.64%; precision:  95.93%; recall:  97.52%; FB1:  96.72
-
-2018-09-03 16:29:50,524 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:52,188 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:52,462 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  97.52%; recall:  97.52%; FB1:  97.52
-
-2018-09-03 16:29:52,462 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:53,269 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:28 step:17/29, INTENT loss: 1.564755, NER loss: 0.546555
-2018-09-03 16:29:53,951 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:54,205 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.67%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:29:54,205 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:55,913 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:56,153 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  97.52%; recall:  97.52%; FB1:  97.52
-
-2018-09-03 16:29:56,154 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:57,758 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:58,044 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.73%; precision:  98.33%; recall:  97.52%; FB1:  97.93
-
-2018-09-03 16:29:58,045 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:29:59,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:29:59,736 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  97.52%; recall:  97.52%; FB1:  97.52
-
-2018-09-03 16:29:59,737 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:29:59,758 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:32 step:1/29, INTENT loss: 1.537672, NER loss: 0.377706
-2018-09-03 16:30:01,141 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:01,382 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.58%; precision:  95.16%; recall:  97.52%; FB1:  96.33
-
-2018-09-03 16:30:01,382 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:30:02,963 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:03,193 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.67%; precision:  95.93%; recall:  97.52%; FB1:  96.72
-
-2018-09-03 16:30:03,194 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:30:04,593 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:04,828 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.67%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:04,829 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:05,688 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:35 step:14/29, INTENT loss: 1.526428, NER loss: 0.290113
-2018-09-03 16:30:06,289 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:06,543 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:06,544 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:08,324 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:08,559 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:08,560 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:10,007 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:10,233 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  95.16%; recall:  97.52%; FB1:  96.33
-
-2018-09-03 16:30:10,233 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:11,539 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:38 step:27/29, INTENT loss: 1.498553, NER loss: 0.226993
-2018-09-03 16:30:11,638 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:11,890 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  95.16%; recall:  97.52%; FB1:  96.33
-
-2018-09-03 16:30:11,891 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.340
-2018-09-03 16:30:13,302 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:13,531 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:13,531 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:14,990 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:15,222 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:15,222 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:16,658 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:16,902 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.73%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:16,902 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:17,818 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:42 step:11/29, INTENT loss: 1.480336, NER loss: 0.190977
-2018-09-03 16:30:18,746 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:19,006 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:19,007 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:20,637 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:20,893 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:20,895 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:22,828 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:23,192 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:30:23,192 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:23,288 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:98.350
-2018-09-03 16:30:23,696 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:30:25,084 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:45 step:24/29, INTENT loss: 1.446776, NER loss: 0.119168
-2018-09-03 16:30:25,281 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:25,518 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:30:25,519 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:25,581 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:98.350
-2018-09-03 16:30:25,837 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:30:27,755 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:28,150 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  95.93%; recall:  97.52%; FB1:  96.72
-
-2018-09-03 16:30:28,158 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:30,274 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:30,585 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  97.52%; recall:  97.52%; FB1:  97.52
-
-2018-09-03 16:30:30,585 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:32,375 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:32,722 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  96.75%; recall:  98.35%; FB1:  97.54
-
-2018-09-03 16:30:32,723 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:33,247 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:49 step:8/29, INTENT loss: 1.418315, NER loss: 0.108555
-2018-09-03 16:30:34,666 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:34,985 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:30:34,986 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:36,817 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:37,111 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:30:37,111 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:37,180 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:98.760
-2018-09-03 16:30:37,433 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:30:38,967 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:39,215 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  95.93%; recall:  97.52%; FB1:  96.72
-
-2018-09-03 16:30:39,215 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:40,398 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:52 step:21/29, INTENT loss: 1.419044, NER loss: 0.113929
-2018-09-03 16:30:40,690 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:40,911 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.70%; precision:  96.75%; recall:  98.35%; FB1:  97.54
-
-2018-09-03 16:30:40,912 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:42,371 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:42,595 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:30:42,595 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:44,088 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:44,318 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:30:44,318 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:45,704 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:45,927 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.73%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:30:45,928 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:46,390 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:56 step:5/29, INTENT loss: 1.400992, NER loss: 0.076784
-2018-09-03 16:30:47,343 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:47,583 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:30:47,583 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:49,321 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:49,592 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:30:49,598 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:51,038 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:51,264 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:51,264 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:52,040 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:59 step:18/29, INTENT loss: 1.343456, NER loss: 0.074127
-2018-09-03 16:30:52,770 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:53,064 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  96.72%; recall:  97.52%; FB1:  97.12
-
-2018-09-03 16:30:53,065 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:54,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:54,767 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.73%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:30:54,768 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:30:56,125 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:56,345 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:30:56,345 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:57,679 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:57,900 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:30:57,900 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:30:57,934 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:63 step:2/29, INTENT loss: 1.365656, NER loss: 0.060358
-2018-09-03 16:30:59,354 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:30:59,582 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:30:59,582 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:01,140 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:01,356 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:31:01,357 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:02,674 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:02,890 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:31:02,891 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:03,552 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:66 step:15/29, INTENT loss: 1.313900, NER loss: 0.050321
-2018-09-03 16:31:04,211 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:04,427 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:04,428 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:05,837 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:06,053 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:06,054 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:07,370 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:07,586 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:07,586 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:07,640 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:07,935 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:09,208 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:69 step:28/29, INTENT loss: 1.309516, NER loss: 0.046977
-2018-09-03 16:31:09,310 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:09,568 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:09,568 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:11,041 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:11,257 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:11,257 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:11,311 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:11,590 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:12,904 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:13,120 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:31:13,120 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:14,502 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:14,718 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:31:14,718 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:15,293 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:73 step:12/29, INTENT loss: 1.305335, NER loss: 0.038944
-2018-09-03 16:31:16,334 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:16,561 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:31:16,562 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:17,994 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:18,210 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:31:18,210 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:19,580 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:19,848 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:19,849 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:19,907 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:20,211 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:21,583 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:76 step:25/29, INTENT loss: 1.268070, NER loss: 0.039360
-2018-09-03 16:31:21,697 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:21,918 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:21,919 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:23,312 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:23,542 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:23,543 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:25,000 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:25,230 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:25,230 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:26,557 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:26,773 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:26,774 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:27,159 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:80 step:9/29, INTENT loss: 1.246142, NER loss: 0.030242
-2018-09-03 16:31:28,092 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:28,308 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.73%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:31:28,309 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.370
-2018-09-03 16:31:29,621 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:29,839 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:29,839 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:29,893 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:30,160 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:31,602 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:31,822 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:31,822 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:31,876 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:32,184 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:33,400 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:83 step:22/29, INTENT loss: 1.259233, NER loss: 0.035182
-2018-09-03 16:31:33,604 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:33,876 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:33,877 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:35,283 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:35,501 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.79%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:35,501 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:36,819 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:37,034 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:37,034 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:37,088 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:37,360 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:38,759 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:38,990 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:38,991 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:39,558 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:87 step:6/29, INTENT loss: 1.224312, NER loss: 0.022732
-2018-09-03 16:31:40,415 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:40,631 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:40,631 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:41,955 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:42,169 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:42,170 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:43,488 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:43,703 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.76%; precision:  98.35%; recall:  98.35%; FB1:  98.35
-
-2018-09-03 16:31:43,703 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:44,628 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:90 step:19/29, INTENT loss: 1.225619, NER loss: 0.107881
-2018-09-03 16:31:45,015 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:45,231 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:45,231 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:45,284 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:45,545 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:46,871 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:47,086 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.73%; precision:  97.54%; recall:  98.35%; FB1:  97.94
-
-2018-09-03 16:31:47,086 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:48,403 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:48,617 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:48,618 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:48,672 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:48,942 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:50,262 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:50,478 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:50,478 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:50,533 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:50,821 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:50,921 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:94 step:3/29, INTENT loss: 1.184817, NER loss: 0.035854
-2018-09-03 16:31:52,141 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:52,358 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:52,358 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:52,413 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:52,688 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:54,021 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:54,240 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.82%; precision:  99.17%; recall:  98.35%; FB1:  98.76
-
-2018-09-03 16:31:54,240 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:55,665 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:55,880 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:55,880 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:55,935 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:56,187 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:56,929 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:97 step:16/29, INTENT loss: 1.187590, NER loss: 0.023031
-2018-09-03 16:31:57,510 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:57,734 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:57,736 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:31:57,833 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:31:58,132 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:31:59,625 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:31:59,842 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:31:59,842 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:31:59,898 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:32:00,212 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:32:01,539 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:32:01,755 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:32:01,755 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.360
-2018-09-03 16:32:01,816 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:32:02,144 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:32:03,549 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:101 step:0/29, INTENT loss: 1.180604, NER loss: 0.017441
-2018-09-03 16:32:03,549 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:dev
-2018-09-03 16:32:03,765 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.85%; precision: 100.00%; recall:  98.35%; FB1:  99.17
-
-2018-09-03 16:32:03,766 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.350
-2018-09-03 16:32:03,820 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best dev f1 score:99.170
-2018-09-03 16:32:04,125 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
-2018-09-03 16:32:04,127 - D:\learn\ner\NER_medical_records\log\train.log - INFO - evaluate:test
-2018-09-03 16:32:04,303 - D:\learn\ner\NER_medical_records\log\train.log - INFO - accuracy:  99.31%; precision:  93.75%; recall:  93.75%; FB1:  93.75
-
-2018-09-03 16:32:04,305 - D:\learn\ner\NER_medical_records\log\train.log - INFO - intent accuracy score is:0.469
-2018-09-03 16:32:04,393 - D:\learn\ner\NER_medical_records\log\train.log - INFO - new best test f1 score:93.750
+2018-09-03 22:30:29,362 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model_type     :	idcnn
+2018-09-03 22:30:29,362 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_chars      :	704
+2018-09-03 22:30:29,362 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - char_dim       :	100
+2018-09-03 22:30:29,363 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_tags       :	28
+2018-09-03 22:30:29,363 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_intents    :	6
+2018-09-03 22:30:29,363 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - seg_dim        :	20
+2018-09-03 22:30:29,363 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lstm_dim       :	100
+2018-09-03 22:30:29,363 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - batch_size     :	20
+2018-09-03 22:30:29,363 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - emb_file       :	/Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/assets/cooked_corpus/vec.txt
+2018-09-03 22:30:29,363 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - clip           :	5
+2018-09-03 22:30:29,364 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - dropout_keep   :	0.5
+2018-09-03 22:30:29,364 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - optimizer      :	adam
+2018-09-03 22:30:29,371 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lr             :	0.001
+2018-09-03 22:30:29,371 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - tag_schema     :	iobes
+2018-09-03 22:30:29,371 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - pre_emb        :	True
+2018-09-03 22:30:29,372 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - zeros          :	True
+2018-09-03 22:30:29,372 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lower          :	False
+2018-09-03 22:30:32,161 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Created model with fresh parameters.
+2018-09-03 22:30:32,459 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Load pre-trained embedding.
+2018-09-03 22:30:32,460 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - start training
+2018-09-03 22:30:34,880 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:35,323 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  90.81%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2018-09-03 22:30:35,324 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.130
+2018-09-03 22:30:37,015 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:37,312 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  90.81%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2018-09-03 22:30:37,312 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.220
+2018-09-03 22:30:38,957 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:39,254 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  90.81%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2018-09-03 22:30:39,254 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.170
+2018-09-03 22:30:40,290 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:4 step:13/29, INTENT loss: 2.028369, NER loss:15.481946
+2018-09-03 22:30:40,977 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:41,286 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  90.93%; precision:   0.00%; recall:   0.00%; FB1:   0.00
+
+2018-09-03 22:30:41,287 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:30:43,053 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:43,358 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  93.14%; precision:  26.47%; recall:  14.88%; FB1:  19.05
+
+2018-09-03 22:30:43,358 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.320
+2018-09-03 22:30:43,416 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:19.050
+2018-09-03 22:30:43,755 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:30:45,487 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:45,790 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  94.58%; precision:  27.62%; recall:  23.97%; FB1:  25.66
+
+2018-09-03 22:30:45,790 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.080
+2018-09-03 22:30:45,841 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:25.660
+2018-09-03 22:30:46,023 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:30:47,611 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:7 step:26/29, INTENT loss: 1.975380, NER loss: 6.459329
+2018-09-03 22:30:47,731 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:48,064 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  96.65%; precision:  50.39%; recall:  53.72%; FB1:  52.00
+
+2018-09-03 22:30:48,064 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.160
+2018-09-03 22:30:48,119 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:52.000
+2018-09-03 22:30:48,313 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:30:50,044 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:50,350 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  97.69%; precision:  64.39%; recall:  70.25%; FB1:  67.19
+
+2018-09-03 22:30:50,351 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.230
+2018-09-03 22:30:50,406 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:67.190
+2018-09-03 22:30:50,599 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:30:52,890 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:53,264 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  97.87%; precision:  69.57%; recall:  79.34%; FB1:  74.13
+
+2018-09-03 22:30:53,264 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.170
+2018-09-03 22:30:53,321 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:74.130
+2018-09-03 22:30:53,559 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:30:55,960 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:56,311 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.35%; precision:  78.20%; recall:  85.95%; FB1:  81.89
+
+2018-09-03 22:30:56,311 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.250
+2018-09-03 22:30:56,367 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:81.890
+2018-09-03 22:30:56,593 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:30:57,166 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:11 step:10/29, INTENT loss: 1.980233, NER loss: 3.266915
+2018-09-03 22:30:58,571 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:30:58,902 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.74%; precision:  85.95%; recall:  85.95%; FB1:  85.95
+
+2018-09-03 22:30:58,902 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.210
+2018-09-03 22:30:58,957 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:85.950
+2018-09-03 22:30:59,160 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:01,093 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:01,420 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.83%; precision:  82.58%; recall:  90.08%; FB1:  86.17
+
+2018-09-03 22:31:01,421 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.200
+2018-09-03 22:31:01,477 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:86.170
+2018-09-03 22:31:01,685 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:03,660 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:03,975 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.83%; precision:  81.82%; recall:  89.26%; FB1:  85.38
+
+2018-09-03 22:31:03,975 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.120
+2018-09-03 22:31:05,304 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:14 step:23/29, INTENT loss: 1.870437, NER loss: 2.198402
+2018-09-03 22:31:05,835 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:06,174 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.92%; precision:  84.62%; recall:  90.91%; FB1:  87.65
+
+2018-09-03 22:31:06,174 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.190
+2018-09-03 22:31:06,232 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:87.650
+2018-09-03 22:31:06,427 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:08,218 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:08,517 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.92%; precision:  88.00%; recall:  90.91%; FB1:  89.43
+
+2018-09-03 22:31:08,517 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.320
+2018-09-03 22:31:08,570 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:89.430
+2018-09-03 22:31:08,749 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:10,408 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:10,718 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.89%; precision:  84.38%; recall:  89.26%; FB1:  86.75
+
+2018-09-03 22:31:10,718 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.200
+2018-09-03 22:31:12,444 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:12,753 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.07%; precision:  88.98%; recall:  93.39%; FB1:  91.13
+
+2018-09-03 22:31:12,754 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.320
+2018-09-03 22:31:12,809 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:91.130
+2018-09-03 22:31:12,991 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:13,395 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:18 step:7/29, INTENT loss: 1.749902, NER loss: 1.468874
+2018-09-03 22:31:14,669 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:14,979 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.25%; precision:  87.50%; recall:  92.56%; FB1:  89.96
+
+2018-09-03 22:31:14,979 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.340
+2018-09-03 22:31:16,670 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:16,972 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.37%; precision:  91.94%; recall:  94.21%; FB1:  93.06
+
+2018-09-03 22:31:16,972 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.180
+2018-09-03 22:31:17,025 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:93.060
+2018-09-03 22:31:17,211 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:18,902 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:19,198 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.10%; precision:  90.40%; recall:  93.39%; FB1:  91.87
+
+2018-09-03 22:31:19,198 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:31:20,487 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:21 step:20/29, INTENT loss: 1.642228, NER loss: 1.186393
+2018-09-03 22:31:20,853 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:21,160 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.07%; precision:  89.06%; recall:  94.21%; FB1:  91.57
+
+2018-09-03 22:31:21,160 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:31:22,825 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:23,125 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.25%; precision:  87.88%; recall:  95.87%; FB1:  91.70
+
+2018-09-03 22:31:23,125 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.270
+2018-09-03 22:31:24,815 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:25,114 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.37%; precision:  90.62%; recall:  95.87%; FB1:  93.17
+
+2018-09-03 22:31:25,114 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.230
+2018-09-03 22:31:25,167 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:93.170
+2018-09-03 22:31:25,352 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:27,039 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:27,335 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.46%; precision:  89.23%; recall:  95.87%; FB1:  92.43
+
+2018-09-03 22:31:27,335 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.280
+2018-09-03 22:31:27,485 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:25 step:4/29, INTENT loss: 1.546111, NER loss: 0.790423
+2018-09-03 22:31:29,019 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:29,327 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.37%; precision:  94.26%; recall:  95.04%; FB1:  94.65
+
+2018-09-03 22:31:29,327 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.280
+2018-09-03 22:31:29,381 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:94.650
+2018-09-03 22:31:29,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:31,270 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:31,569 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.55%; precision:  95.08%; recall:  95.87%; FB1:  95.47
+
+2018-09-03 22:31:31,569 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.170
+2018-09-03 22:31:31,623 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:95.470
+2018-09-03 22:31:31,807 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:33,473 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:33,770 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.28%; precision:  91.34%; recall:  95.87%; FB1:  93.55
+
+2018-09-03 22:31:33,770 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.180
+2018-09-03 22:31:34,706 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:28 step:17/29, INTENT loss: 1.496413, NER loss: 0.669625
+2018-09-03 22:31:35,478 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:35,783 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.43%; precision:  93.50%; recall:  95.04%; FB1:  94.26
+
+2018-09-03 22:31:35,783 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.260
+2018-09-03 22:31:37,459 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:37,757 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.46%; precision:  93.50%; recall:  95.04%; FB1:  94.26
+
+2018-09-03 22:31:37,758 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.220
+2018-09-03 22:31:39,477 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:39,767 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.34%; precision:  90.70%; recall:  96.69%; FB1:  93.60
+
+2018-09-03 22:31:39,768 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:31:41,451 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:41,746 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.43%; precision:  89.84%; recall:  95.04%; FB1:  92.37
+
+2018-09-03 22:31:41,746 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.280
+2018-09-03 22:31:42,051 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:32 step:1/29, INTENT loss: 1.458322, NER loss: 0.489930
+2018-09-03 22:31:43,408 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:43,713 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.49%; precision:  91.41%; recall:  96.69%; FB1:  93.98
+
+2018-09-03 22:31:43,714 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.210
+2018-09-03 22:31:45,357 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:45,652 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  95.12%; recall:  96.69%; FB1:  95.90
+
+2018-09-03 22:31:45,652 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:31:45,704 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:95.900
+2018-09-03 22:31:45,891 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:47,568 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:47,901 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.71%; precision:  85.19%; recall:  95.04%; FB1:  89.84
+
+2018-09-03 22:31:47,902 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:31:48,895 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:35 step:14/29, INTENT loss: 1.400253, NER loss: 0.423288
+2018-09-03 22:31:49,683 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:49,986 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.49%; precision:  92.80%; recall:  95.87%; FB1:  94.31
+
+2018-09-03 22:31:49,986 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.250
+2018-09-03 22:31:51,696 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:51,996 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.86%; precision:  87.60%; recall:  93.39%; FB1:  90.40
+
+2018-09-03 22:31:51,996 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.230
+2018-09-03 22:31:53,678 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:53,970 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.52%; precision:  95.87%; recall:  95.87%; FB1:  95.87
+
+2018-09-03 22:31:53,970 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.200
+2018-09-03 22:31:55,512 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:38 step:27/29, INTENT loss: 1.400907, NER loss: 0.573775
+2018-09-03 22:31:55,652 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:55,940 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.61%; precision:  95.90%; recall:  96.69%; FB1:  96.30
+
+2018-09-03 22:31:55,940 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.320
+2018-09-03 22:31:55,991 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:96.300
+2018-09-03 22:31:56,180 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:31:57,855 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:31:58,154 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.52%; precision:  94.31%; recall:  95.87%; FB1:  95.08
+
+2018-09-03 22:31:58,154 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.360
+2018-09-03 22:31:59,954 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:00,262 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.55%; precision:  93.60%; recall:  96.69%; FB1:  95.12
+
+2018-09-03 22:32:00,274 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:32:01,969 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:02,273 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  96.75%; recall:  98.35%; FB1:  97.54
+
+2018-09-03 22:32:02,273 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.190
+2018-09-03 22:32:02,325 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:97.540
+2018-09-03 22:32:02,510 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:32:03,372 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:42 step:11/29, INTENT loss: 1.278082, NER loss: 0.291090
+2018-09-03 22:32:04,208 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:04,511 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  96.67%; recall:  95.87%; FB1:  96.27
+
+2018-09-03 22:32:04,511 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.270
+2018-09-03 22:32:06,230 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:06,526 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  94.26%; recall:  95.04%; FB1:  94.65
+
+2018-09-03 22:32:06,527 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:32:08,323 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:08,621 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  96.64%; recall:  95.04%; FB1:  95.83
+
+2018-09-03 22:32:08,621 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.280
+2018-09-03 22:32:10,113 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:45 step:24/29, INTENT loss: 1.278175, NER loss: 0.220553
+2018-09-03 22:32:10,287 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:10,586 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  96.69%; recall:  96.69%; FB1:  96.69
+
+2018-09-03 22:32:10,586 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.260
+2018-09-03 22:32:12,266 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:12,579 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.58%; precision:  95.08%; recall:  95.87%; FB1:  95.47
+
+2018-09-03 22:32:12,579 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.250
+2018-09-03 22:32:14,237 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:14,524 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.58%; precision:  95.87%; recall:  95.87%; FB1:  95.87
+
+2018-09-03 22:32:14,524 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.160
+2018-09-03 22:32:16,162 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:16,471 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.61%; precision:  95.12%; recall:  96.69%; FB1:  95.90
+
+2018-09-03 22:32:16,471 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.370
+2018-09-03 22:32:16,801 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:49 step:8/29, INTENT loss: 1.176271, NER loss: 0.169960
+2018-09-03 22:32:18,128 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:18,435 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.52%; precision:  95.87%; recall:  95.87%; FB1:  95.87
+
+2018-09-03 22:32:18,447 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.200
+2018-09-03 22:32:20,101 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:20,393 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.61%; precision:  96.72%; recall:  97.52%; FB1:  97.12
+
+2018-09-03 22:32:20,393 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.330
+2018-09-03 22:32:22,040 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:22,343 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  97.52%; recall:  97.52%; FB1:  97.52
+
+2018-09-03 22:32:22,343 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:32:23,579 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:52 step:21/29, INTENT loss: 1.111207, NER loss: 0.191588
+2018-09-03 22:32:24,003 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:24,293 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  98.33%; recall:  97.52%; FB1:  97.93
+
+2018-09-03 22:32:24,293 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.220
+2018-09-03 22:32:24,344 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:97.930
+2018-09-03 22:32:24,536 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:32:26,209 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:26,508 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  96.67%; recall:  95.87%; FB1:  96.27
+
+2018-09-03 22:32:26,508 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:32:28,308 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:28,612 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  97.52%; recall:  97.52%; FB1:  97.52
+
+2018-09-03 22:32:28,622 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.260
+2018-09-03 22:32:30,389 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:30,691 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.55%; precision:  95.87%; recall:  95.87%; FB1:  95.87
+
+2018-09-03 22:32:30,691 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.300
+2018-09-03 22:32:30,972 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:56 step:5/29, INTENT loss: 1.135428, NER loss: 0.167429
+2018-09-03 22:32:32,436 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:32,739 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  98.33%; recall:  97.52%; FB1:  97.93
+
+2018-09-03 22:32:32,740 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.300
+2018-09-03 22:32:34,431 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:34,734 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.55%; precision:  95.93%; recall:  97.52%; FB1:  96.72
+
+2018-09-03 22:32:34,734 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:32:36,422 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:36,737 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.52%; precision:  93.55%; recall:  95.87%; FB1:  94.69
+
+2018-09-03 22:32:36,738 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:32:37,904 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:59 step:18/29, INTENT loss: 1.034756, NER loss: 0.132227
+2018-09-03 22:32:38,417 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:38,740 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.55%; precision:  94.31%; recall:  95.87%; FB1:  95.08
+
+2018-09-03 22:32:38,740 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.210
+2018-09-03 22:32:40,769 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:41,106 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  98.32%; recall:  96.69%; FB1:  97.50
+
+2018-09-03 22:32:41,107 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:32:43,259 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:43,567 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.61%; precision:  95.90%; recall:  96.69%; FB1:  96.30
+
+2018-09-03 22:32:43,567 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.330
+2018-09-03 22:32:45,340 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:45,648 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  96.69%; recall:  96.69%; FB1:  96.69
+
+2018-09-03 22:32:45,649 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:32:45,747 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:63 step:2/29, INTENT loss: 1.035785, NER loss: 0.152527
+2018-09-03 22:32:47,448 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:47,752 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  96.69%; recall:  96.69%; FB1:  96.69
+
+2018-09-03 22:32:47,753 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.260
+2018-09-03 22:32:49,469 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:49,811 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  95.90%; recall:  96.69%; FB1:  96.30
+
+2018-09-03 22:32:49,811 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:32:51,591 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:51,891 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  98.33%; recall:  97.52%; FB1:  97.93
+
+2018-09-03 22:32:51,891 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:32:52,955 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:66 step:15/29, INTENT loss: 0.978503, NER loss: 0.120346
+2018-09-03 22:32:53,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:53,892 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.55%; precision:  94.31%; recall:  95.87%; FB1:  95.08
+
+2018-09-03 22:32:53,892 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:32:55,607 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:55,914 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  98.33%; recall:  97.52%; FB1:  97.93
+
+2018-09-03 22:32:55,914 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:32:57,614 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:57,949 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  95.90%; recall:  96.69%; FB1:  96.30
+
+2018-09-03 22:32:57,949 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:32:59,613 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:69 step:28/29, INTENT loss: 0.964512, NER loss: 0.160842
+2018-09-03 22:32:59,639 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:32:59,939 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.49%; precision:  93.60%; recall:  96.69%; FB1:  95.12
+
+2018-09-03 22:32:59,940 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.280
+2018-09-03 22:33:01,620 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:01,918 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  97.52%; recall:  97.52%; FB1:  97.52
+
+2018-09-03 22:33:01,918 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:33:03,740 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:04,060 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  95.90%; recall:  96.69%; FB1:  96.30
+
+2018-09-03 22:33:04,060 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.330
+2018-09-03 22:33:05,870 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:06,217 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  95.90%; recall:  96.69%; FB1:  96.30
+
+2018-09-03 22:33:06,217 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.300
+2018-09-03 22:33:07,085 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:73 step:12/29, INTENT loss: 0.951024, NER loss: 0.181441
+2018-09-03 22:33:07,997 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:08,294 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.73%; precision:  99.16%; recall:  97.52%; FB1:  98.33
+
+2018-09-03 22:33:08,294 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.240
+2018-09-03 22:33:08,346 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:98.330
+2018-09-03 22:33:08,542 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:33:10,318 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:10,640 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.73%; precision:  99.16%; recall:  97.52%; FB1:  98.33
+
+2018-09-03 22:33:10,640 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.200
+2018-09-03 22:33:12,500 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:12,795 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  96.72%; recall:  97.52%; FB1:  97.12
+
+2018-09-03 22:33:12,796 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.280
+2018-09-03 22:33:14,450 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:76 step:25/29, INTENT loss: 0.923952, NER loss: 0.110957
+2018-09-03 22:33:14,647 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:14,971 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  97.50%; recall:  96.69%; FB1:  97.10
+
+2018-09-03 22:33:14,971 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.280
+2018-09-03 22:33:16,727 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:17,047 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  97.50%; recall:  96.69%; FB1:  97.10
+
+2018-09-03 22:33:17,047 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.300
+2018-09-03 22:33:18,769 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:19,088 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  97.50%; recall:  96.69%; FB1:  97.10
+
+2018-09-03 22:33:19,088 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.260
+2018-09-03 22:33:20,789 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:21,091 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.61%; precision:  95.12%; recall:  96.69%; FB1:  95.90
+
+2018-09-03 22:33:21,091 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.330
+2018-09-03 22:33:21,546 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:80 step:9/29, INTENT loss: 0.851435, NER loss: 0.064237
+2018-09-03 22:33:22,947 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:23,280 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  96.67%; recall:  95.87%; FB1:  96.27
+
+2018-09-03 22:33:23,280 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.320
+2018-09-03 22:33:25,055 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:25,348 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.64%; precision:  95.87%; recall:  95.87%; FB1:  95.87
+
+2018-09-03 22:33:25,348 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.340
+2018-09-03 22:33:27,012 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:27,311 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  97.50%; recall:  96.69%; FB1:  97.10
+
+2018-09-03 22:33:27,311 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.210
+2018-09-03 22:33:28,516 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:83 step:22/29, INTENT loss: 0.879573, NER loss: 0.085263
+2018-09-03 22:33:28,997 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:29,295 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.61%; precision:  95.04%; recall:  95.04%; FB1:  95.04
+
+2018-09-03 22:33:29,296 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.350
+2018-09-03 22:33:31,081 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:31,375 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.37%; precision:  95.12%; recall:  96.69%; FB1:  95.90
+
+2018-09-03 22:33:31,375 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.330
+2018-09-03 22:33:33,044 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:33,343 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.13%; precision:  92.80%; recall:  95.87%; FB1:  94.31
+
+2018-09-03 22:33:33,344 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:33:35,012 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:35,310 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.58%; precision:  97.48%; recall:  95.87%; FB1:  96.67
+
+2018-09-03 22:33:35,310 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:33:35,990 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:87 step:6/29, INTENT loss: 0.854652, NER loss: 0.240191
+2018-09-03 22:33:37,063 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:37,364 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  96.69%; recall:  96.69%; FB1:  96.69
+
+2018-09-03 22:33:37,364 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.250
+2018-09-03 22:33:39,061 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:39,367 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.55%; precision:  94.35%; recall:  96.69%; FB1:  95.51
+
+2018-09-03 22:33:39,367 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.330
+2018-09-03 22:33:41,030 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:41,326 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.61%; precision:  96.75%; recall:  98.35%; FB1:  97.54
+
+2018-09-03 22:33:41,326 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.260
+2018-09-03 22:33:42,414 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:90 step:19/29, INTENT loss: 0.842812, NER loss: 0.092238
+2018-09-03 22:33:42,984 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:43,281 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  96.69%; recall:  96.69%; FB1:  96.69
+
+2018-09-03 22:33:43,281 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:33:44,930 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:45,229 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.58%; precision:  94.31%; recall:  95.87%; FB1:  95.08
+
+2018-09-03 22:33:45,230 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:33:46,890 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:47,181 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.67%; precision:  98.32%; recall:  96.69%; FB1:  97.50
+
+2018-09-03 22:33:47,182 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.220
+2018-09-03 22:33:48,846 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:49,143 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.76%; precision:  98.35%; recall:  98.35%; FB1:  98.35
+
+2018-09-03 22:33:49,143 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.320
+2018-09-03 22:33:49,194 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:98.350
+2018-09-03 22:33:49,372 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:33:49,469 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:94 step:3/29, INTENT loss: 0.755573, NER loss: 0.065902
+2018-09-03 22:33:51,060 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:51,370 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  98.32%; recall:  96.69%; FB1:  97.50
+
+2018-09-03 22:33:51,380 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.300
+2018-09-03 22:33:53,156 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:53,464 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.76%; precision:  99.17%; recall:  98.35%; FB1:  98.76
+
+2018-09-03 22:33:53,472 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:33:53,527 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best dev f1 score:98.760
+2018-09-03 22:33:53,714 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
+2018-09-03 22:33:55,420 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:55,718 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.70%; precision:  98.33%; recall:  97.52%; FB1:  97.93
+
+2018-09-03 22:33:55,719 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:33:56,590 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:97 step:16/29, INTENT loss: 0.750226, NER loss: 0.072973
+2018-09-03 22:33:57,469 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:57,771 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.76%; precision:  99.16%; recall:  97.52%; FB1:  98.33
+
+2018-09-03 22:33:57,771 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.290
+2018-09-03 22:33:59,452 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:33:59,760 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.73%; precision:  96.69%; recall:  96.69%; FB1:  96.69
+
+2018-09-03 22:33:59,761 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.230
+2018-09-03 22:34:01,458 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:34:01,765 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.79%; precision:  99.17%; recall:  98.35%; FB1:  98.76
+
+2018-09-03 22:34:01,766 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.250
+2018-09-03 22:34:03,474 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:101 step:0/29, INTENT loss: 0.819484, NER loss: 0.068735
+2018-09-03 22:34:03,474 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:dev
+2018-09-03 22:34:03,786 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.73%; precision:  99.16%; recall:  97.52%; FB1:  98.33
+
+2018-09-03 22:34:03,786 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.310
+2018-09-03 22:34:03,787 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:test
+2018-09-03 22:34:03,943 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.23%; precision:  93.55%; recall:  90.62%; FB1:  92.06
+
+2018-09-03 22:34:03,944 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.224
+2018-09-03 22:34:04,009 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best test f1 score:92.060
+2018-09-03 22:34:47,800 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
+2018-09-03 22:34:47,865 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:test
+2018-09-03 22:34:48,155 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  98.71%; precision:  87.88%; recall:  90.62%; FB1:  89.23
+
+2018-09-03 22:34:48,155 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.245
+2018-09-03 22:34:48,220 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best test f1 score:89.230
+2018-09-03 22:35:25,801 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
+2018-09-03 22:35:40,142 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - invalid index to scalar variable.
+2018-09-03 22:35:50,518 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - invalid index to scalar variable.
+2018-09-03 22:36:03,365 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - invalid index to scalar variable.
+2018-09-03 22:36:19,759 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - invalid index to scalar variable.
+2018-09-03 22:38:31,412 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
+2018-09-03 22:43:11,344 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
+2018-09-03 22:43:42,481 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
