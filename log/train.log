@@ -1,92 +1,46 @@
-2018-09-02 17:09:06,256 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model_type     :	bilstm
-2018-09-02 17:09:06,256 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_chars      :	704
-2018-09-02 17:09:06,256 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - char_dim       :	100
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_tags       :	28
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_intents    :	6
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - seg_dim        :	20
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lstm_dim       :	100
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - batch_size     :	20.0
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - emb_file       :	/Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/assets/cooked_corpus/vec.txt
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - clip           :	5.0
-2018-09-02 17:09:06,257 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - dropout_keep   :	0.5
-2018-09-02 17:09:06,258 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - optimizer      :	adam
-2018-09-02 17:09:06,258 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lr             :	0.001
-2018-09-02 17:09:06,258 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - tag_schema     :	iobes
-2018-09-02 17:09:06,258 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - pre_emb        :	True
-2018-09-02 17:09:06,258 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - zeros          :	True
-2018-09-02 17:09:06,258 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lower          :	False
-2018-09-02 17:09:09,756 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Created model with fresh parameters.
-2018-09-02 17:09:10,081 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Load pre-trained embedding.
-2018-09-02 17:09:10,081 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - start training
-2018-09-02 17:09:12,970 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:09:17,015 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:4 step:13/29, INTENT loss: 1.737030NER loss:18.366711
-2018-09-02 17:09:48,582 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model_type     :	bilstm
-2018-09-02 17:09:48,582 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_chars      :	704
-2018-09-02 17:09:48,582 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - char_dim       :	100
-2018-09-02 17:09:48,582 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_tags       :	28
-2018-09-02 17:09:48,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - num_intents    :	6
-2018-09-02 17:09:48,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - seg_dim        :	20
-2018-09-02 17:09:48,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lstm_dim       :	100
-2018-09-02 17:09:48,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - batch_size     :	20.0
-2018-09-02 17:09:48,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - emb_file       :	/Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/assets/cooked_corpus/vec.txt
-2018-09-02 17:09:48,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - clip           :	5.0
-2018-09-02 17:09:48,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - dropout_keep   :	0.5
-2018-09-02 17:09:48,584 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - optimizer      :	adam
-2018-09-02 17:09:48,584 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lr             :	0.001
-2018-09-02 17:09:48,584 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - tag_schema     :	iobes
-2018-09-02 17:09:48,584 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - pre_emb        :	True
-2018-09-02 17:09:48,584 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - zeros          :	True
-2018-09-02 17:09:48,584 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - lower          :	False
-2018-09-02 17:09:52,065 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
-2018-09-02 17:09:52,141 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - start training
-2018-09-02 17:09:54,964 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:09:57,332 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:4 step:13/29, INTENT loss: 1.706112, NER loss:10.832974
-2018-09-02 17:10:03,366 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:7 step:26/29, INTENT loss: 1.692173, NER loss: 6.017529
-2018-09-02 17:10:06,959 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:10:09,082 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:11 step:10/29, INTENT loss: 1.657063, NER loss: 3.121391
-2018-09-02 17:10:14,780 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:14 step:23/29, INTENT loss: 1.632789, NER loss: 2.221495
-2018-09-02 17:10:18,858 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:10:20,921 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:18 step:7/29, INTENT loss: 1.617186, NER loss: 1.594697
-2018-09-02 17:10:26,704 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:21 step:20/29, INTENT loss: 1.582736, NER loss: 1.092000
-2018-09-02 17:10:30,804 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:10:32,640 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:25 step:4/29, INTENT loss: 1.575564, NER loss: 0.805283
-2018-09-02 17:10:38,723 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:28 step:17/29, INTENT loss: 1.553932, NER loss: 0.626651
-2018-09-02 17:10:42,695 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:10:44,467 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:32 step:1/29, INTENT loss: 1.530853, NER loss: 0.413479
-2018-09-02 17:10:50,527 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:35 step:14/29, INTENT loss: 1.522972, NER loss: 0.367843
-2018-09-02 17:10:54,669 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:10:56,236 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:38 step:27/29, INTENT loss: 1.491572, NER loss: 0.262284
-2018-09-02 17:11:01,894 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:42 step:11/29, INTENT loss: 1.465975, NER loss: 0.210717
-2018-09-02 17:11:06,555 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:11:07,693 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:45 step:24/29, INTENT loss: 1.451452, NER loss: 0.158693
-2018-09-02 17:11:13,646 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:49 step:8/29, INTENT loss: 1.454432, NER loss: 0.118471
-2018-09-02 17:11:18,309 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:11:19,583 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:52 step:21/29, INTENT loss: 1.412281, NER loss: 0.103688
-2018-09-02 17:11:25,187 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:56 step:5/29, INTENT loss: 1.396030, NER loss: 0.091212
-2018-09-02 17:11:30,077 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:11:31,127 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:59 step:18/29, INTENT loss: 1.380226, NER loss: 0.083201
-2018-09-02 17:11:36,716 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:63 step:2/29, INTENT loss: 1.359324, NER loss: 0.071936
-2018-09-02 17:11:41,781 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:11:42,860 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:66 step:15/29, INTENT loss: 1.348380, NER loss: 0.089522
-2018-09-02 17:11:48,331 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:69 step:28/29, INTENT loss: 1.307614, NER loss: 0.052570
-2018-09-02 17:11:53,500 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:11:54,314 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:73 step:12/29, INTENT loss: 1.296212, NER loss: 0.052495
-2018-09-02 17:11:59,639 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:76 step:25/29, INTENT loss: 1.271753, NER loss: 0.042412
-2018-09-02 17:12:05,297 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:12:05,804 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:80 step:9/29, INTENT loss: 1.265592, NER loss: 0.049121
-2018-09-02 17:12:11,572 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:83 step:22/29, INTENT loss: 1.252166, NER loss: 0.036973
-2018-09-02 17:12:17,025 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:12:17,599 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:87 step:6/29, INTENT loss: 1.230305, NER loss: 0.032798
-2018-09-02 17:12:23,083 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:90 step:19/29, INTENT loss: 1.207028, NER loss: 0.026413
-2018-09-02 17:12:28,708 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:12:28,867 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:94 step:3/29, INTENT loss: 1.234731, NER loss: 0.028161
-2018-09-02 17:12:34,464 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:97 step:16/29, INTENT loss: 1.198074, NER loss: 0.021124
-2018-09-02 17:12:40,273 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - iteration:101 step:0/29, INTENT loss: 1.196447, NER loss: 0.032325
-2018-09-02 17:12:40,494 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - model saved
-2018-09-02 17:13:29,011 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
-2018-09-02 17:14:12,119 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - Reading model parameters from ckpt/ner.ckpt
-2018-09-02 17:14:12,197 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - evaluate:test
-2018-09-02 17:14:12,431 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - accuracy:  99.06%; precision:  85.71%; recall:  93.75%; FB1:  89.55
-
-2018-09-02 17:14:12,431 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - intent accuracy score is:0.469
-2018-09-02 17:14:12,511 - /Users/gaoquan/Documents/ml-learning/ner-learning/NER_medical_records/log/train.log - INFO - new best test f1 score:89.550
+2018-09-03 10:25:31,549 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model_type     :	idcnn
+2018-09-03 10:25:31,549 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_chars      :	704
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - char_dim       :	100
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_tags       :	28
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_intents    :	6
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - seg_dim        :	20
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lstm_dim       :	100
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - batch_size     :	20
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - emb_file       :	D:\learn\ner\NER_medical_records\assets\cooked_corpus\vec.txt
+2018-09-03 10:25:31,550 - D:\learn\ner\NER_medical_records\log\train.log - INFO - clip           :	5
+2018-09-03 10:25:31,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - dropout_keep   :	0.5
+2018-09-03 10:25:31,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - optimizer      :	adam
+2018-09-03 10:25:31,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lr             :	0.001
+2018-09-03 10:25:31,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - tag_schema     :	iobes
+2018-09-03 10:25:31,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - pre_emb        :	True
+2018-09-03 10:25:31,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - zeros          :	True
+2018-09-03 10:25:31,551 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lower          :	False
+2018-09-03 10:25:33,459 - D:\learn\ner\NER_medical_records\log\train.log - INFO - Created model with fresh parameters.
+2018-09-03 10:25:33,655 - D:\learn\ner\NER_medical_records\log\train.log - INFO - Load pre-trained embedding.
+2018-09-03 10:25:33,655 - D:\learn\ner\NER_medical_records\log\train.log - INFO - start training
+2018-09-03 10:28:25,368 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
+2018-09-03 10:35:26,635 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:4 step:13/29, INTENT loss: 1.941378, NER loss:15.193346
+2018-09-03 10:45:09,421 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:7 step:26/29, INTENT loss: 1.960183, NER loss: 6.276441
+2018-09-03 10:48:17,694 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model_type     :	idcnn
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_chars      :	704
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - char_dim       :	100
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_tags       :	28
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - num_intents    :	6
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - seg_dim        :	20
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lstm_dim       :	100
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - batch_size     :	20
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - emb_file       :	D:\learn\ner\NER_medical_records\assets\cooked_corpus\vec.txt
+2018-09-03 10:54:00,511 - D:\learn\ner\NER_medical_records\log\train.log - INFO - clip           :	5
+2018-09-03 10:54:00,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - dropout_keep   :	0.5
+2018-09-03 10:54:00,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - optimizer      :	adam
+2018-09-03 10:54:00,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lr             :	0.001
+2018-09-03 10:54:00,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - tag_schema     :	iobes
+2018-09-03 10:54:00,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - pre_emb        :	True
+2018-09-03 10:54:00,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - zeros          :	True
+2018-09-03 10:54:00,512 - D:\learn\ner\NER_medical_records\log\train.log - INFO - lower          :	False
+2018-09-03 10:54:02,733 - D:\learn\ner\NER_medical_records\log\train.log - INFO - Reading model parameters from ckpt\ner.ckpt
+2018-09-03 10:54:02,774 - D:\learn\ner\NER_medical_records\log\train.log - INFO - start training
+2018-09-03 10:56:50,447 - D:\learn\ner\NER_medical_records\log\train.log - INFO - model saved
+2018-09-03 11:00:56,621 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:11 step:10/29, INTENT loss: 1.900561, NER loss: 3.290825
+2018-09-03 11:10:38,977 - D:\learn\ner\NER_medical_records\log\train.log - INFO - iteration:14 step:23/29, INTENT loss: 1.888546, NER loss: 2.040243
