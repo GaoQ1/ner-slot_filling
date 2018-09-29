@@ -3,6 +3,8 @@ import jieba
 import jieba.posseg as pseg
 import re, os
 
+import code
+
 root_path = os.getcwd() + os.sep
 c_mark = ['；', '。', '?', '？', '!', '！', ';']
 slots = ['DIS', 'SYM', 'SGN', 'TES', 'DRU', 'SUR', 'PRE', 'PT', 'Dur', 'TP', 'REG', 'ORG', 'AT', 'PSB', 'DEG', 'FW', 'CL']

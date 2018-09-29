@@ -82,6 +82,7 @@ def train():
     dev_sentences = load_sentences(args.dev_file, args.lower, args.zeros)
     test_sentences = load_sentences(args.test_file, args.lower, args.zeros)
 
+
     # Use selected tagging scheme (IOB / IOBES)
     # 检测并维护数据集的 tag 标记
     update_tag_scheme(train_sentences, args.tag_schema)
@@ -128,6 +129,10 @@ def train():
     test_data = prepare_dataset(
         test_sentences, char_to_id, tag_to_id, intent_to_id, args.lower
     )
+
+    # code.interact(local=locals())
+
+
     print("%i / %i / %i sentences in train / dev / test." % (
         len(train_data), len(dev_data), len(test_data)))
 

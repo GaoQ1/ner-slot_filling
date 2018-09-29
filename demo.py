@@ -1,13 +1,47 @@
-import numpy as np
+import json
+import codecs
+import os
 
-import code
-
-# a = np.array([[[100, 3, 4], [5, 6, 7]], [[8, 3, 4], [5, 9, 7]]])
-a = np.array([[2,3], [4,1]])
-# b = np.argmax(a, 1)
-# c = np.expand_dims(b, 1)
+root_path = os.getcwd() + os.sep
+c_mark = ['；', '。', '?', '？', '!', '！', ';']
+cooked_corpus_path = root_path + "assets" + os.sep + "cooked_corpus"
 
 
-b = np.sort(a, axis=1)
+with codecs.open('1.json', 'r', 'utf-8') as f:
+    json_dict = json.load(f)
 
-code.interact(local=locals())
+fout1 = open(os.path.join(cooked_corpus_path,'demo.dev'), 'w', encoding='utf8')
+
+
+for value in json_dict.get("common_examples", []):
+    text = value.get("text")
+    entities = value.get("entities")
+    value = 'O'
+
+    bilou = [value for _ in text]
+
+    for item in entities:
+        start = item.get("start")
+        end = item.get("end")
+        entity = item.get("entity")
+
+        if start is not None and end is not None:
+            bilou[start] = 'B-' + entity
+            for i in range(start+1, end):
+                bilou[i] = 'I-' + entity
+
+    for index, achar in enumerate(text):
+        if achar and achar.strip() in c_mark: # 如果是标点符号就多换一个行
+            string = achar + " " + bilou[index] + "\n" + "\n"
+            fout1.write(string)
+
+        elif achar.strip() and achar.strip() not in c_mark:
+            string = achar + " " + bilou[index] + "\n"
+            fout1.write(string)
+
+        else:
+            continue
+
+
+
+fout1.close()
