@@ -17,7 +17,6 @@ for value in json_dict.get("common_examples", []):
     text = value.get("text")
     entities = value.get("entities")
     value = 'O'
-
     bilou = [value for _ in text]
 
     for item in entities:
